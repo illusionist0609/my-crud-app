@@ -1,0 +1,20 @@
+{
+  "ClientList": [
+    {
+      "clientName": "sudhanshu",
+      "clientID": 1235,
+      "Email": "sudhanshu@gmail.com",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

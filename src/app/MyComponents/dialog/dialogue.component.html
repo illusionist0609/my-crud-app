@@ -1,0 +1,27 @@
+    <h1 mat-dialog-title>Enter Client Details</h1>
+    <div  mat-dialog-content>
+       <form [formGroup]="clientForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Client Name</mat-label>
+            <input formControlName="clientName" matInput placeholder="Enter Client Name">
+
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Client ID</mat-label>
+            <input formControlName="clientID" matInput type="number" placeholder="Enter Client ID Number">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Client Email-ID</mat-label>
+            <input formControlName="Email" matInput type="email" placeholder="Enter Client Email-ID">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+       </form>
+    </div>
+    <div mat-dialog-actions [align]="'end'">
+        <button mat-raised-button color="warn"  mat-dialog-close>Close</button>
+        <button mat-raised-button class="btn" (click)="addClient()">{{actionBtn}}</button>
+
+    </div>
